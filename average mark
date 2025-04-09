@@ -1,0 +1,23 @@
+#1/bin/bash
+echo "enter mark 1 :"
+read a
+echo "enter mark 2 :"
+read b
+echo "enter mark 3 :"
+read c
+d=$((a + b + c))
+echo "sum is $d"
+avg=$((d/3))
+echo "average is $avg"
+if [ $avg -gt 90 ];
+then
+        echo "a+"
+elif [ $avg -lt 50 ];
+then
+        echo "b+"
+elif [ $avg -lt 50 ];
+then
+        echo "fail"
+else
+        echo "invalid"
+fi
